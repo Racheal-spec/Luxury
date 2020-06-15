@@ -14,16 +14,6 @@ body {
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
-/*
-a {
-  color: #fdcc52;
-  transition: all .35s;
-}
-
-a:hover, a:focus {
-  color: #fcbd20;
-}
-*/
 
 hr {
   max-width: 500px;
@@ -52,11 +42,7 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-/*
-section {
-  padding: 100px 0;
-}
-*/
+
 section h2 {
   font-size: 50px;
 }
@@ -152,106 +138,7 @@ section h2 {
     color: #fdcc52;
   }
 }
-/*My codes starts from here!*/
-header.masthead {
-  position: relative;
-  width: 100%;
-  color: white;
-  
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/interior-design-of-a-house-1571460.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.collection-item img{
-  max-width: 100%;
-}
-.collection{
-  background: url("../image/abstract-ancient-antique-art-235985.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.artisan-pic img{
-  max-width: 100%;
-  border-radius: 10%;
-}
-.artisan-pic2 img{
-  max-width: 100%;
-  border-radius: 30%;
-}
-section div.row.artisan2{
-  background-color: rgba(255, 248, 220, 0.219);
-}
 
-.about-slides img{
-  margin-top: 100px;
-}
-.contact-img img{
-  max-width: 100%;
-}
-input[type=text]{
-  border: none;
-  border-bottom: 1px solid darkgrey;
-}
-form{
-  border: 2px solid yellow;
-  padding: 40px 10px;
-  border-radius: 20px;
-}
-.form-control{
-  background: rgba(0, 0, 0, 0.822);
-}
-@media (min-width:992px){
-  section.artisan {
-    position: relative;
-  }
-  
-}
-/*Ends here*/
-
-
-header.masthead .header-content {
-  max-width: 500px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-header.masthead .header-content h1 {
-  font-size: 30px;
-}
-
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 775px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.masthead .header-content {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  header.masthead .header-content h1 {
-    font-size: 50px;
-  }
-}
-
- 
-
-@media (max-width: 768px) {
-  section.artisan h2 {
-    font-size: 50px;
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-}
 
 section.collection .section-heading {
   margin-bottom: 100px;
@@ -275,11 +162,6 @@ section.collection .device-container {
   margin-bottom: 100px;
 }
 
-@media (min-width: 992px) {
-  section.collection .device-container {
-    margin-bottom: 0;
-  }
-}
 
 section.collection .feature-item {
   padding-top: 50px;
@@ -302,7 +184,7 @@ section.collection.feature-item i {
 
 section.cta {
   position: relative;
-  background-image: url("../image/beige-and-black-chair-in-front-of-white-desk-509922.jpg");
+  background-image: url("../image/man-working-on-a-wooden-board-3637800.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -313,17 +195,12 @@ section.cta .cta-content {
 }
 
 section.cta .cta-content h2 {
-  font-size: 50px;
+  font-size: 60px;
   max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
-  }
-}
 /*Contact section*/
 section.contact2 {
   text-align: center;
@@ -380,16 +257,16 @@ section.contact2 ul.list-social li.social-google-plus a {
 section.contact2 ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
-/*
+
 section.cta .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width:100%;
   height:100%;
-background-color: rgba(0, 0, 0, 0.29);
+  background-color: rgba(0, 0, 0, 0.589);
 }
-*/
+
 footer {
   max-width: 100%;
   padding: 60px 0;
@@ -405,16 +282,8 @@ footer p {
 
 footer ul {
   margin-bottom: 0;
-}
-
-footer .row .col ul li{
   list-style: none;
 }
-footer .row .col ul a{
-  color: white;
-  padding: 15px 0;
-}
-
 
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
   text-decoration: none;
@@ -429,11 +298,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: #fdcc52;
 }
 
-
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
+
 
 .btn-outline {
   color: white;
@@ -458,3 +327,131 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+
+
+/*My codes starts from here!*/
+header.masthead {
+  position: relative;
+  width: 100%;
+  color: white;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/interior-design-of-a-house-1571460.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.collection-item img{
+  max-width: 100%;
+}
+.collection{
+  background: url("../image/abstract-ancient-antique-art-235985.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.artisan-pic img{
+  max-width: 100%;
+  border-radius: 10%;
+}
+.artisan-pic2 img{
+  max-width: 100%;
+  border-radius: 30%;
+}
+section div.row.artisan2{
+  background-color: rgba(255, 248, 220, 0.219);
+}
+
+.about-slides img{
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.contact-img img{
+  max-width: 100%;
+}
+input[type=text]{
+  border: none;
+  border-bottom: 1px solid darkgrey;
+}
+form{
+  border: 2px solid yellow;
+  padding: 40px 10px;
+  border-radius: 20px;
+}
+.form-control{
+  background: rgba(0, 0, 0, 0.822);
+}
+
+footer .row .col ul a li{
+  color: white;
+  padding: 15px 0;
+  list-style: none;
+  text-transform: none;
+}
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
+}
+
+/*Ends here*/
+
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+/*media query starts*/
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+    section.artisan {
+      position: relative;
+    }
+    
+}
+
+@media (max-width: 768px) {
+  section.artisan h2 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+  section.download h2 {
+    font-size: 70px;
+  }
+    section.cta .cta-content h2 {
+      font-size: 80px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+  section.collection .device-container {
+    margin-bottom: 0;
+  }
+}
+/*media query ends here*/

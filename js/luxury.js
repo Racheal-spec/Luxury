@@ -40,3 +40,53 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+/*
+//Showroom slide show
+
+let i = 0;
+  let images = [];
+  let time = 1000;
+  //Images
+  images[0] = "image/man-in-black-sleeveless-shirt-sitting-on-wooden-high-chair-996219.jpg";
+  images[1] = "image/man-in-green-t-shirt-using-router-on-wooden-piece-3637798.jpg";
+  images[2] = "image/man-on-cutting-table-3536424.jpg";
+  images[3] = "image/man-working-on-a-machinery-3637827.jpg";
+  images[4] = "image/man-working-on-a-wooden-board-3637800.jpg";  
+
+function sliderImage(){
+  
+  document.slide.src = images[i];
+  if(i < images.lenght - 1){
+    i++;
+  }else{
+    i = 0;
+  }
+  setTimeout("sliderImage()", time);
+}
+window.onload = sliderImage;
+*/
+
+
+//Fade-in Animation
+
+let faders = document.querySelectorAll('.fade-in');
+let options = {
+  threshold: 0.3
+};
+//call the intersectionOberserver
+let fadeInOnScroll = new IntersectionObserver(fadeAnime, options);
+//call your function
+function fadeAnime(entries){
+entries.forEach(entry => {
+  if(!entry.isIntersecting){
+    return;
+  }else{
+    entry.target.classList.add('appear');
+    fadeInOnScroll.unobserve(entry.target);
+  }
+});
+}
+faders.forEach(fader =>{
+  fadeInOnScroll.observe(fader);
+})
