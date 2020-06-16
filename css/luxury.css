@@ -1,18 +1,11 @@
-/*!
- * Start Bootstrap - New Age v5.0.7 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
- */
 
-html,
 body {
   width: 100%;
   height: 100%;
-  
-}
-
-body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
 }
 
 hr {
@@ -46,6 +39,8 @@ p {
 section h2 {
   font-size: 50px;
 }
+
+/*Navbar styling*/
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -99,6 +94,8 @@ section h2 {
   color: #fdcc52;
 }
 
+/*Making Navbar responsive*/
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -139,6 +136,44 @@ section h2 {
   }
 }
 
+/*header style starts here*/
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+header.masthead {
+  position: relative;
+  width: 100%;
+  color: white;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/interior-design-of-a-house-1571460.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*artisan section starts here*/
+
+.artisan-pic img{
+  max-width: 100%;
+  border-radius: 10%;
+}
+.artisan-pic2 img{
+  max-width: 100%;
+  border-radius: 30%;
+}
+section div.row.artisan2{
+  background-color: rgba(255, 248, 220, 0.219);
+}
+
+/*Collection section starts here*/
 
 section.collection .section-heading {
   margin-bottom: 100px;
@@ -151,42 +186,71 @@ section.collection .section-heading h2 {
 section.collection .section-heading p {
   margin-bottom: 0;
 }
+.collection-item img{
+  max-width: 100%;
+}
+.collection{
+  background: url("../image/abstract-ancient-antique-art-235985.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*about section*/
 
-section.collection .device-container,
-section.collection .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
+.about-slides img{
+  margin-top: 100px;
+  max-width: 100%;
+}
+.slider{
+  overflow: hidden;
+}
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slider infinite;
+}
+.slider figure img{
+  float: left;
+  width: 20%;
+}
+@keyframes slider{
+  0% {
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
 }
 
-section.collection .device-container {
-  margin-bottom: 100px;
-}
-
-
-section.collection .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-section.collection.feature-item h3 {
-  font-size: 30px;
-}
-
-section.collection.feature-item i {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+/*Cta sections starts here*/
 section.cta {
   position: relative;
   background-image: url("../image/man-working-on-a-wooden-board-3637800.jpg");
   background-position: center;
-  background-size: cover;
+ background-size: cover;
 }
 
 section.cta .cta-content {
@@ -200,8 +264,36 @@ section.cta .cta-content h2 {
   margin-top: 0;
   margin-bottom: 25px;
 }
+section.cta .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.589);
+}
 
-/*Contact section*/
+
+/*Main contact section*/
+
+.contact-img img{
+  max-width: 100%;
+}
+input[type=text]{
+  border: none;
+  border-bottom: 1px solid darkgrey;
+}
+form{
+  padding: 40px 10px;
+  border-radius: 20px;
+}
+.form-control{
+  background: rgba(0, 0, 0, 0.822);
+}
+
+
+/* social-media Contact section*/
+
 section.contact2 {
   text-align: center;
 }
@@ -209,10 +301,6 @@ section.contact2 {
 section.contact2 h2 {
   margin-top: 0;
   margin-bottom: 25px;
-}
-
-section.contact2 h2 i {
-  color: #dd4b39;
 }
 
 section.contact2{
@@ -258,14 +346,7 @@ section.contact2 ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 
-section.cta .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  background-color: rgba(0, 0, 0, 0.589);
-}
+/*footer section starts here*/
 
 footer {
   max-width: 100%;
@@ -288,7 +369,69 @@ footer ul {
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
   text-decoration: none;
 }
+footer .row .col ul a li{
+  color: white;
+  padding: 15px 0;
+  list-style: none;
+  text-transform: none;
+}
 
+/*Css Animation code*/
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
+}
+
+/*media query starts*/
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+    section.artisan {
+      position: relative;
+    }
+    section.collection .device-container {
+      margin-bottom: 0;
+    } 
+}
+@media (max-width: 768px) {
+  section.artisan h2 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+footer{
+  font-size: 16px;
+}
+footer .row{
+  margin-right: 20px;
+}
+}
+@media (min-width: 768px) {
+  section.download h2 {
+    font-size: 70px;
+  }
+    section.cta .cta-content h2 {
+      font-size: 80px;
+    }  
+}
+/*media query ends here*/
+
+
+/*Extras*/
 .bg-primary {
   background: #fdcc52;
   background: linear-gradient(#fdcc52, #fdc539);
@@ -329,129 +472,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 
-/*My codes starts from here!*/
-header.masthead {
-  position: relative;
-  width: 100%;
-  color: white;
-  
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/interior-design-of-a-house-1571460.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.collection-item img{
-  max-width: 100%;
-}
-.collection{
-  background: url("../image/abstract-ancient-antique-art-235985.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.artisan-pic img{
-  max-width: 100%;
-  border-radius: 10%;
-}
-.artisan-pic2 img{
-  max-width: 100%;
-  border-radius: 30%;
-}
-section div.row.artisan2{
-  background-color: rgba(255, 248, 220, 0.219);
-}
-
-.about-slides img{
-  margin-top: 100px;
-  max-width: 100%;
-}
-
-.contact-img img{
-  max-width: 100%;
-}
-input[type=text]{
-  border: none;
-  border-bottom: 1px solid darkgrey;
-}
-form{
-  border: 2px solid yellow;
-  padding: 40px 10px;
-  border-radius: 20px;
-}
-.form-control{
-  background: rgba(0, 0, 0, 0.822);
-}
-
-footer .row .col ul a li{
-  color: white;
-  padding: 15px 0;
-  list-style: none;
-  text-transform: none;
-}
-.fade-in{
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-.fade-in.appear{
-  opacity: 1;
-}
-
-/*Ends here*/
 
 
-header.masthead .header-content {
-  max-width: 500px;
-  margin-bottom: 100px;
-  text-align: center;
-}
 
-header.masthead .header-content h1 {
-  font-size: 30px;
-}
-/*media query starts*/
 
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 775px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.masthead .header-content {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  header.masthead .header-content h1 {
-    font-size: 50px;
-  }
-    section.artisan {
-      position: relative;
-    }
-    
-}
 
-@media (max-width: 768px) {
-  section.artisan h2 {
-    font-size: 50px;
-    margin-top: 0;
-  }
-
-}
-
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-    section.cta .cta-content h2 {
-      font-size: 80px;
-    }
-    
-}
-
-@media (min-width: 992px) {
-  section.collection .device-container {
-    margin-bottom: 0;
-  }
-}
-/*media query ends here*/
