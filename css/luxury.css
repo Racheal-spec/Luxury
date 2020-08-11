@@ -2,12 +2,19 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Recursive', sans-serif;
+  /*font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';*/
   margin: 0;
   padding: 0;
   overflow-x: hidden; 
 }
-
+body p{
+  color: rgba(0, 0, 0, 0.603);
+}
+/*
+.logo a{
+  font-family: 'Tangerine', serif;
+}*/
 hr {
   max-width: 500px;
   margin: 25px auto 0;
@@ -138,21 +145,11 @@ section h2 {
 
 /*header style starts here*/
 
-header.masthead .header-content {
-  max-width: 500px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-header.masthead .header-content h1 {
-  font-size: 30px;
-}
 header.masthead {
   position: relative;
   width: 100%;
   color: white;
-  
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/interior-design-of-a-house-1571460.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.692)), url("../image/interior-design-of-a-house-1571460.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -161,16 +158,19 @@ header.masthead {
 
 /*artisan section starts here*/
 
-.artisan-pic img{
+.artisan-pic img, .artisan-pic2 img{
   max-width: 100%;
-  border-radius: 10%;
 }
-.artisan-pic2 img{
-  max-width: 100%;
-  border-radius: 30%;
+.artisan-pic img{
+  height: 50vh;
+  width: 50vw;
+  object-fit: cover;
 }
 section div.row.artisan2{
   background-color: rgba(255, 248, 220, 0.219);
+}
+section .artisan h2{
+  font-size: 2rem;
 }
 
 /*Collection section starts here*/
@@ -190,10 +190,13 @@ section.collection .section-heading p {
   max-width: 100%;
 }
 .collection{
-  background: url("../image/abstract-ancient-antique-art-235985.jpg");
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.collection .btn{
+  background-color: rgba(255, 208, 0, 0.89);
 }
 /*about section*/
 
@@ -248,31 +251,11 @@ section.collection .section-heading p {
 /*Cta sections starts here*/
 section.cta {
   position: relative;
-  background-image: url("../image/man-working-on-a-wooden-board-3637800.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.692)),url("../image/man-working-on-a-wooden-board-3637800.jpg");
   background-position: center;
- background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-section.cta .cta-content h2 {
-  font-size: 60px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-section.cta .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  background-color: rgba(0, 0, 0, 0.589);
-}
-
 
 /*Main contact section*/
 
